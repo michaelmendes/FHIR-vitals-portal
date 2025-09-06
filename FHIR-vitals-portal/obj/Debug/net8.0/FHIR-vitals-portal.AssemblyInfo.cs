@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FHIR-vitals-portal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76a9427a5fc13af7002609c28ef376c198bae440")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+312ec73a3003a1a2a430bbe9491c968aebe41440")]
 [assembly: System.Reflection.AssemblyProductAttribute("FHIR-vitals-portal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FHIR-vitals-portal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,55 @@
+# Build results
+bin/
+obj/
+out/
+artifacts/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Visual Studio
+.vs/
+.vscode/
+
+# Rider
+.idea/
+
+# Logs
+*.log
+
+# DotNet tools
+*.dotnet/
+
+# Transient files
+*.tmp
+*.temp
+
+# Dependency files
+*.cache
+*.pdb
+
+# MacOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Node (if Blazor WASM uses npm)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Coverage reports
+coverage/
+*.coverage
+*.coveragexml
+
+# Publish output
+wwwroot/dist/
+wwwroot/node_modules/
+publish/
