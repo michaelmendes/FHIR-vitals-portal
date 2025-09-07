@@ -1,0 +1,6 @@
+@FHIRVitalsPortal.Server_HostAddress = http://localhost:5076
+
+GET {{FHIRVitalsPortal.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
