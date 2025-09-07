@@ -6,6 +6,16 @@ var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+builder.Services.AddScoped(sp =>
+    new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
-await builder.Build().RunAsync();
+builder.Services.AddScoped(sp => new FhirService("http://localhost:8080/fhir"));
+builder.Services.AddRazorPages();
+builder.Services.AddServerSideBlazor();
+
+var app = builder.Build();
+app.MapBlazorHub();
+app.MapFallbackToPage("/_Host");
+
+
+await app.RunAsync();
